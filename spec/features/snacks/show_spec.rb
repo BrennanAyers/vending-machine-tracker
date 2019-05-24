@@ -16,6 +16,8 @@ RSpec.describe 'As a user', type: :feature do
     it 'should display the name and price of the snack' do
       visit snack_path(@cheetos)
 
+      expect(page).to have_content("Flaming Hot Cheetos")
+      expect(page).to have_content("Price: $2.50")
     end
   end
 end
