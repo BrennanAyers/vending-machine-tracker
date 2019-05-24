@@ -24,8 +24,8 @@ RSpec.describe 'As a user', type: :feature do
       visit snack_path(@cheetos)
 
       expect(page).to have_content("Locations:")
-      expect(page).to have_content("* Don's Mixed Drinks (3 Kinds of Snacks, Average Price of $2.50)")
-      expect(page).to have_content("* Turing Basement (2 Kinds of Snacks, Average Price of $3.00)")
+      expect(page).to have_content("Don's Mixed Drinks (3 Kinds of Snacks, Average Price of $2.50)")
+      expect(page).to have_content("Turing Basement (2 Kinds of Snacks, Average Price of $3.00)")
     end
   end
 end
