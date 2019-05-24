@@ -23,5 +23,9 @@ RSpec.describe Machine, type: :model do
     it '#average_price' do
       expect(@dons.average_price).to eq(2.0)
     end
+
+    it '#snack_count' do
+      expect(@dons.snack_count).to eq(3)
+    end
   end
 end
