@@ -17,5 +17,11 @@ RSpec.describe 'As a user', type: :feature do
       expect(page).to have_content("Pop Rocks: $1.50")
       expect(page).to have_content("Flaming Hot Cheetos: $2.50")
     end
+
+    it 'should display the average price of all snacks in the machine' do
+      visit machine_path(@dons)
+
+      expect(page).to have_content("Average Price: $2.50")
+    end
   end
 end
